@@ -1,7 +1,7 @@
 let soundToggleOn = document.getElementById('sound-toggle-on');
 let soundToggleOff = document.getElementById('sound-toggle-off');
-const mouseClick = new Audio('music/mouseclick.mp3');
-const bgm = new Audio('music/opening.mp3');
+const mouseClick = new Audio('music/マウスクリック.wav');
+const bgm = new Audio('music/bgm.wav');
 
 //野菜の音声
 const cucumberSound = new Audio('music/きゅうり.mp3');
@@ -18,8 +18,10 @@ const bellPepperSound = new Audio('music/ぴーまん.mp3');
 soundToggleOn.addEventListener('click', () => {
     soundToggleOn.style.display = 'none';
     soundToggleOff.style.display = 'block';
+    mouseClick.volume = 0.1;
     mouseClick.play();
     mouseClick.currentTime = 0;
+    
 
     bgm.play();
     bgm.volume = 0.1;
@@ -89,7 +91,7 @@ pumpkin.addEventListener('click', () => {
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/かぼちゃ3.png';
+    createImg.src = 'img/かぼちゃ.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
     //pタグを追加
@@ -118,7 +120,7 @@ cabbage.addEventListener('click', () => {
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/キャベツ.png';
+    createImg.src = 'img/きゃべつ.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
     //pタグを追加
@@ -147,7 +149,7 @@ goya.addEventListener('click', () => {
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/ゴーヤー.png';
+    createImg.src = 'img/ごーやー.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
     //pタグを追加

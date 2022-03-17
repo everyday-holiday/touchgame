@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ghn7bdu',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タッチ！であそぼ！</title>
+</head>
+
+<body>
+    <div class="modal-wrap" id="modal-wrap">
+        <div class="white-window">
+            <div class="show-touched-vegetable" id="show-touched-vegetable">
+            </div>
+        </div>
+    </div>
+
+    <div class="all-wrap">
+
+        <div class="main-container">
+
+            <div class="top-box">
+                <p>タッチ！であそぼ！</p>
+                <img src="" alt="">
+            </div>
+
+            <div class="main-wrap">
+                <div class="fruit-sound-toggle-wrap">
+                    <div class="sound-toggle-on" id="sound-toggle-on">
+                        <p>♪オン</p>
+                    </div>
+
+                    <div class="sound-toggle-off" id="sound-toggle-off">
+                        <p>♪オフ</p>
+                    </div>
+                </div>
+
+                <p class="fruit-center-text">やさいをタッチ！</p>
+
+                <div class="fruit-click-btn-wrap">
+                    <div class="fruit-btn" id="cucumber">
+                        <img src="img/きゅうり.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="pumpkin">
+                        <img src="img/かぼちゃ3.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="cabbage">
+                        <img src="img/キャベツ.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="goya">
+                        <img src="img/ゴーヤー.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="potato">
+                        <img src="img/じゃがいも.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="radish">
+                        <img src="img/だいこん.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="onion">
+                        <img src="img/たまねぎ.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="tomato">
+                        <img src="img/とまと.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="carrot">
+                        <img src="img/にんじん.png" alt="">
+                    </div>
+
+                    <div class="fruit-btn" id="bell-pepper">
+                        <img src="img/ぴーまん.png" alt="">
+                    </div>
+
+
+                </div>
+
+                <div class="finish-btn-wrap" id="finish-btn-wrap">
+                    <div class="finish-btn">
+                        <a href="sample.html">おわる</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-box">
+                <p>&copy; フリイラ.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 let soundToggleOn = document.getElementById('sound-toggle-on');
 let soundToggleOff = document.getElementById('sound-toggle-off');
 const mouseClick = new Audio('music/マウスクリック音.mp3');
-const bgm = new Audio('music/ポジティブ　オープニング.mp3');
+const bgm = new Audio('music/opening.mp3');
 
 //野菜の音声
 const cucumberSound = new Audio('music/きゅうり.mp3');

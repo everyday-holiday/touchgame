@@ -39,9 +39,6 @@ soundToggleOff.addEventListener('click', () => {
     bgm.pause();
 });
 
-window.addEventListener('beforeUnload', () => {
-    bgm.pause();
-});
 
 /*野菜をタッチした時のモーダルの動き */
 

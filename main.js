@@ -3,6 +3,8 @@ let soundToggleOff = document.getElementById('sound-toggle-off');
 const mouseClick = new Audio('music/マウスクリック.wav');
 const bgm = new Audio('music/bgm.wav');
 
+// let getWindowHeight = window.innerHeight;
+
 //野菜の音声
 const cucumberSound = new Audio('music/きゅうり.mp3');
 const pumpkinSound =new Audio('music/かぼちゃ.mp3');
@@ -24,7 +26,7 @@ soundToggleOn.addEventListener('click', () => {
     
 
     bgm.play();
-    bgm.volume = 0.1;
+    bgm.volume = 0.05;
     bgm.loop = true;
 });
 
@@ -55,18 +57,17 @@ let bellPepper = document.getElementById('bell-pepper');
 
 //きゅうり
 cucumber.addEventListener('click', () => {
+    // let getWindowHeight = window.innerHeight;
+    // console.log(getWindowHeight + 'px');
+    
+    // showModalWrap.style.height = getWindowHeight + 'px';
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'きゅうり';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/きゅうり.png';
+    createImg.src = 'img/きゅうり2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -78,24 +79,19 @@ cucumber.addEventListener('click', () => {
         showModalWrap.style.display = 'none';
         //追加した要素を削除しておく(リセット)
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //かぼちゃ
 pumpkin.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'かぼちゃ';
+
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/かぼちゃ.png';
+    createImg.src = 'img/かぼちゃ2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -107,24 +103,18 @@ pumpkin.addEventListener('click', () => {
         showModalWrap.style.display = 'none';
         //追加した要素を削除しておく(リセット)
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //きゃべつ
 cabbage.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'きゃべつ';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/きゃべつ.png';
+    createImg.src = 'img/きゃべつ2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -136,24 +126,18 @@ cabbage.addEventListener('click', () => {
         showModalWrap.style.display = 'none';
         //追加した要素を削除しておく(リセット)
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //ごーや
 goya.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'ゴーヤー';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/ごーやー.png';
+    createImg.src = 'img/ごーやー2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -164,24 +148,18 @@ goya.addEventListener('click', () => {
     setTimeout(() => {
         showModalWrap.style.display = 'none';
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //じゃがいも
 potato.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'じゃがいも';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/じゃがいも.png';
+    createImg.src = 'img/じゃがいも2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -192,24 +170,18 @@ potato.addEventListener('click', () => {
     setTimeout(() => {
         showModalWrap.style.display = 'none';
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //だいこん
 radish.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'だいこん';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/だいこん.png';
+    createImg.src = 'img/だいこん2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -220,24 +192,18 @@ radish.addEventListener('click', () => {
     setTimeout(() => {
         showModalWrap.style.display = 'none';
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //たまねぎ
 onion.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'たまねぎ';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/たまねぎ.png';
+    createImg.src = 'img/たまねぎ2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -248,24 +214,18 @@ onion.addEventListener('click', () => {
     setTimeout(() => {
         showModalWrap.style.display = 'none';
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //とまと
 tomato.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'とまと';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/とまと.png';
+    createImg.src = 'img/とまと2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -276,24 +236,18 @@ tomato.addEventListener('click', () => {
     setTimeout(() => {
         showModalWrap.style.display = 'none';
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //にんじん
 carrot.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'にんじん';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/にんじん.png';
+    createImg.src = 'img/にんじん2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -304,24 +258,18 @@ carrot.addEventListener('click', () => {
     setTimeout(() => {
         showModalWrap.style.display = 'none';
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
 
 //ぴーまん
 bellPepper.addEventListener('click', () => {
     showModalWrap.style.display = 'flex';
-    //pタグを生成
-    let create_p = document.createElement('p');
-    create_p.textContent = 'ぴーまん';
 
     //imgを生成
     let createImg = document.createElement('img');
-    createImg.src = 'img/ぴーまん.png';
+    createImg.src = 'img/ぴーまん2.png';
 
     let showTouchedVegetable = document.getElementById('show-touched-vegetable');
-    //pタグを追加
-    showTouchedVegetable.appendChild(create_p);
 
     //imgを追加
     showTouchedVegetable.appendChild(createImg);
@@ -332,15 +280,5 @@ bellPepper.addEventListener('click', () => {
     setTimeout(() => {
         showModalWrap.style.display = 'none';
         createImg.remove();
-        create_p.remove();
     }, 1800);
 });
-
-
-
-
-
-
-
-
-

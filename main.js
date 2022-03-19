@@ -20,12 +20,13 @@ const bellPepperSound = new Audio('music/ぴーまん.mp3');
 soundToggleOn.addEventListener('click', () => {
     soundToggleOn.style.display = 'none';
     soundToggleOff.style.display = 'block';
-    mouseClick.volume = 0.05;
+    mouseClick.volume = 0.1;
     mouseClick.play();
     mouseClick.currentTime = 0;
     
-    bgm.volume = 1;
+
     bgm.play();
+    bgm.volume = 1;
     bgm.loop = true;
 });
 
@@ -35,6 +36,10 @@ soundToggleOff.addEventListener('click', () => {
     mouseClick.play();
     mouseClick.currentTime = 0;
 
+    bgm.pause();
+});
+
+window.addEventListener('beforeUnload', () => {
     bgm.pause();
 });
 

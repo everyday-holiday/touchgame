@@ -1,5 +1,6 @@
 @media screen and (min-width: 401px) {
   * {
+    font-family: sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -174,6 +175,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
 
   body {

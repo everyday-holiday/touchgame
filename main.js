@@ -24,9 +24,8 @@ soundToggleOn.addEventListener('click', () => {
     mouseClick.play();
     mouseClick.currentTime = 0;
     
-
-    bgm.play();
     bgm.volume = 0.005;
+    bgm.play();
     bgm.loop = true;
 });
 
